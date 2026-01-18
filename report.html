@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Report Marine Waste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Report Marine Waste</h2>
+  <p>This page allows citizens to report marine waste with GPS tracking.</p>
+
+  <label>Type of Waste:</label><br>
+  <select id="waste">
+    <option>Plastic Waste</option>
+    <option>Oil Spill</option>
+    <option>Chemical Waste</option>
+    <option>Other Waste</option>
+  </select><br><br>
+
+  <label>Severity Level:</label><br>
+  <select id="severity">
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+  </select><br><br>
+
+  <label>Upload Photo / Video (Proof):</label><br>
+  <input type="file" id="media" accept="image/*,video/*"><br><br>
+
+  <button onclick="getLocation()">Report with Location</button>
+
+  <h3>Report Details</h3>
+  <p id="location"></p>
+  <p id="status"></p>
+  <p id="reward"></p>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
